@@ -2,7 +2,7 @@ self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open('pwatest').then((cache) => {
       return cache.addAll([
-        '/',
+        '/pwatest',
         'index.html',
         'manifest.json',
       ]);
